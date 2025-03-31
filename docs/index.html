@@ -215,13 +215,14 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="">
-                        <h2 class="display-4 lh-1 mb-4">Supported Formats and Limitations</h2>
+                        <h2 class="display-4 lh-1 mb-4">Supported Formats and Beta Limitations</h2>
                         <p class="lead fw-normal mb-5 mb-lg-0">
                             <ul class="fw-normal lead">
+                                <li>For images, <code>png</code> is supported</li>
+                                <li>For meshes, Freeway only understands single-mesh <code>gLTF</code>(<code>.glb</code> only for now) and <code>OBJ</code> files. If your <code>glb</code> or <code>OBJ</code> contains more than one mesh, Freeway will pick the first one. We are working on support of multi-mesh files and it's coming soon. Freeway can’t decimate meshes(yet!), so please make sure your mesh fits the Roblox verts count limit.</li>
                                 <li>Freeway is in Beta, there might be bugs</li>
                                 <li>To fix those bugs, we will release often. Please bear with us and don't hesitate to update</li>
-                                <li>For images, <code>png</code> is supported</li>
-                                <li>For meshes, Freeway only understands single-mesh <code>OBJ</code> files(for now). If your <code>OBJ</code> contains more than one mesh, Freeway will pick the first one. It also can’t decimate meshes(yet!), so please make sure your mesh fits the Roblox verts count limit.</li>
+
                             </ul>
                         </p>
                     </div>

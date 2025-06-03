@@ -161,16 +161,18 @@
                     <div class="">
                         <h2 class="display-4 lh-1 mb-4">How Does It Work?</h2>
                         <p class="lead fw-normal mb-5 mb-lg-0">
-                            Freeway lets you <b><i>wire</i></b> files in your local folder to instances in your game. 
+                            Freeway lets you link files in your local folder to instances in your game. 
                         </p>
-                        <p class="lead fw-normal mb-5 mb-lg-0">For example, you can wire a 3D model file to a <code>MeshPart</code> in your game(or an image to a <code>SurfaceAppearance</code>/<code>Decal</code>/<code>UIButton</code>/etc) and it <b>will update automatically</b> every time you overwrite the file.
+                        <p></p>
+                        <p class="lead fw-normal mb-5 mb-lg-0">For example, you can insert a scene from a gLTF file as a <code>Model</code> in your place, and meshes and materials will be <b>added, deleted and transformed automatically</b> every time the gLTF is updated. <br/>Or, you can link a <code>SurfaceAppearance</code>'s' maps / <code>UIButton</code>'s states / <code>Decal</code>'s texture/ etc to the local images, and they will also <b>update automatically</b> every time you overwrite the image files.
                         </p>
-                        <img class="img-fluid" src="assets/img/folder_to_roblox_dm.png" alt="..." />
                         <p></p>
                         <p class="lead fw-normal mb-5 mb-lg-0">
-                            At the same time, Freeway minimizes the clutter in your inventory by using <code>EditableImage</code> and <code>EditableMesh</code> when possible.                        
+                            At the same time, Freeway minimizes the clutter in your inventory by using <code>EditableImage</code> and <code>EditableMesh</code> where possible.                        
                         </p>
+                        <p></p>
 
+                        <img class="img-fluid" src="assets/img/folder_to_roblox_dm.png" alt="..." />
                     </div>
                 </div>
             </div>
@@ -218,11 +220,9 @@
                         <h2 class="display-4 lh-1 mb-4">Supported Formats and Beta Limitations</h2>
                         <p class="lead fw-normal mb-5 mb-lg-0">
                             <ul class="fw-normal lead">
+                                <li>For meshes, Freeway support <code>gLTF</code>(as <code>.glb</code>) files. Freeway can’t decimate meshes(yet!), so please make sure your mesh fits the Roblox verts count limit.</li>
                                 <li>For images, <code>png</code> is supported</li>
-                                <li>For meshes, Freeway only understands single-mesh <code>gLTF</code>(<code>.glb</code> only for now) and <code>OBJ</code> files. If your <code>glb</code> or <code>OBJ</code> contains more than one mesh, Freeway will pick the first one. We are working on support of multi-mesh files and it's coming soon. Freeway can’t decimate meshes(yet!), so please make sure your mesh fits the Roblox verts count limit.</li>
-                                <li>Freeway is in Beta, there might be bugs</li>
-                                <li>To fix those bugs, we will release often. Please bear with us and don't hesitate to update</li>
-
+                                <li>Freeway is in Beta, there might be bugs -- please report them on <a  href="https://discord.gg/hDwxAhKN7G" target="_blank">Discord</a></li>
                             </ul>
                         </p>
                     </div>
